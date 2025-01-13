@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('s.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #2d89ef; /* Fallback color */
+            color: #fff;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #dcdcdc;
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #2d89ef;
+        }
+        button {
+            padding: 15px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #2d89ef;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1e63c3;
+        }
+        .options {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .options button {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+        .options button:hover {
+            background-color: #fff;
+            color: #2d89ef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Smart Travel Planner</header>
+        <p>Plan your journey with ease! Find the shortest, cheapest routes and book tickets in just a few clicks.</p>
+        <div class="search-box">
+            <form action="secondPage.html" method="GET" style="display: flex; gap: 10px; width: 100%; max-width: 600px;">
+                <input type="text" name="start" placeholder="Enter starting point" required>
+                <input type="text" name="destination" placeholder="Enter destination" required>
+                <button type="submit">Plan Journey</button>
+            </form>
+        </div>
+        <div class="options">
+            <button>Shortest Route</button>
+            <button>Cheapest Route</button>
+        </div>
+    </div>
+</body>
+</html>
